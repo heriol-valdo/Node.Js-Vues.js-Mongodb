@@ -1,0 +1,50 @@
+.card-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+ 
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 800px;
+}
+
+.card {
+
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  width: calc(33.33% - 40px); /* Pour les écrans larges, 3 cards par ligne */
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+   .heit{
+    height: 120px;
+  }
+  .card {
+    width: calc(50% - 40px); /* Pour les écrans moyens, 2 cards par ligne */
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .heit{
+    height: 120px;
+  }
+  .card {
+     top: 200px;
+    width: 100%; /* Pour les écrans étroits, 1 card par ligne */
+  }
+}

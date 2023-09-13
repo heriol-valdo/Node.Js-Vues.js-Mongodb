@@ -1,0 +1,68 @@
+.contact-page {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  
+  
+}
+
+.contact-form {
+  flex: 1;
+  padding: 20px;
+  
+  border-radius: 5px;
+  margin-right: 20px;
+  min-width: 300px; /* Évite que le formulaire soit trop compressé */
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.development-info {
+  flex: 1;
+  padding: 20px;
+  border-radius: 5px;
+  min-width: 300px; 
+}
+
+h2 {
+  margin-top: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-page {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-form,
+  .development-info {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
